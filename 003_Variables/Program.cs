@@ -80,8 +80,6 @@ namespace _003_Variables
             Console.WriteLine($"{capacity}, {surface_square}");
 
             #endregion
-
-
         }
     }
 }
