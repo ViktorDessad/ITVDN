@@ -10,7 +10,7 @@ namespace _004_Conditions
     {
         static void Main(string[] args)
         {
-        #region Word translator
+            #region Word translator
 
         Label:
             Console.WriteLine("Enter weather");
@@ -41,7 +41,7 @@ namespace _004_Conditions
 
         #endregion
 
-        #region Simple Calculator
+            #region Simple Calculator
 
         Label1:
             Console.Write("Enter first operand: ");
@@ -84,7 +84,7 @@ namespace _004_Conditions
             }
             #endregion
 
-        #region Numbers detector
+            #region Numbers detector
             Number:
             Console.Write("Please enter number from 0 to 100: ");
             int number = Convert.ToInt32(Console.ReadLine());
