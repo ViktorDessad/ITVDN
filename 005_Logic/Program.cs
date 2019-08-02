@@ -165,6 +165,7 @@ namespace _005_Logic
                 double totalAmmount = salary + (salary * 0.5);
                 Console.WriteLine("The bonus amount will be 50% of the salary - {0}", salary);
                 Console.WriteLine("The finaly amount will be {0}$", totalAmmount);
+                Console.WriteLine("End");
             }
 
 
