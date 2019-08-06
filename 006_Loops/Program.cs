@@ -120,6 +120,7 @@ namespace _006_Loops
             }
             #endregion
 
+            #region Rombus
             int x = 10;
             int z = 1;
             int y = 14;
@@ -142,6 +143,24 @@ namespace _006_Loops
                 Console.WriteLine();
             }
             Console.WriteLine();
+
+            #endregion
+
+            #region Factorial
+
+            int clientNumber = Convert.ToInt32(Console.ReadLine());
+            int counter = 0;
+            int resul = 0;
+            do
+            {
+                counter++;
+                 resul = counter * resul;
+
+            } while (counter < clientNumber);
+
+            Console.WriteLine(resul);
+
+            #endregion
         }
     }
 }
@@ -150,9 +169,9 @@ namespace _006_Loops
 
 
 
-                       
-           
 
 
 
-            
+
+
+
