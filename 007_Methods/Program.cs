@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _007_Methods
 {
     class Program
     {
+
 
         #region 1. This method does not take a value, and does not return a value
         static void Hello()
@@ -16,7 +13,7 @@ namespace _007_Methods
         }
         #endregion
 
-        #region 2. This method take a value, but does not return he just execute this
+        #region 2. This method take a value, but does not return he just call it
         static void Hello1(string word)
         {
             Console.WriteLine(word);
@@ -24,7 +21,7 @@ namespace _007_Methods
         #endregion
 
         #region 3. This method take a value and returned it
-        static int Add (int oper1, int oper2)
+        static int Add(int oper1, int oper2)
         {
             return oper1 + oper2;
         }
@@ -40,6 +37,18 @@ namespace _007_Methods
             return sum;
         }
         #endregion
+
+        #region 5. Concatnation
+
+        static string MakeConcatenation(string name)
+        {
+            string phrase = "Hello" + name + "!";
+
+            return phrase;
+        }
+
+        #endregion
+
         static void Main(string[] args)
         {
             //1
@@ -47,12 +56,15 @@ namespace _007_Methods
             //2
             Hello1("Hello1");
             //3
-            int sum = Add(2,24);
+            int sum = Add(2, 24);
             Console.WriteLine(sum);
             //4
             int sum1 = Add1();
             Console.WriteLine(sum1);
-
+            //5
+            string phrase = MakeConcatenation("Viktor");
+            Console.WriteLine(phrase);
+           
         }
     }
 }
