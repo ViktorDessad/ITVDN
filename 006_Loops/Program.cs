@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _006_Loops
 {
@@ -154,7 +150,7 @@ namespace _006_Loops
             do
             {
                 counter++;
-                 resul = counter * resul;
+                resul = counter * resul;
 
             } while (counter < clientNumber);
 
