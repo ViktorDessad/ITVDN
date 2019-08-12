@@ -8,7 +8,7 @@ namespace Task4
 {
     class Program
     {
-        static void NumberChecker(double number)
+        static void NumberChecker(int number)
         {
             if (number > 0)
             {
@@ -66,8 +66,10 @@ namespace Task4
         {
             Console.Write("Enter a number: ");
             string @string = Console.ReadLine();
-            double number = Double.Parse(@string);
+            int number = Int32.Parse(@string);
             NumberChecker(number);
+            Remainder(number);
+            Simple(number)
         }
     }
 }
