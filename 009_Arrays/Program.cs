@@ -31,7 +31,9 @@ namespace _009_Arrays
                     continue;
                 }
                 Console.WriteLine("{0} ", arr[i]);
+               
             }
+
 
         }
 
