@@ -22,6 +22,7 @@ namespace _001_Classes
         {
             MyClass helloWorld = new MyClass();
 
+
             helloWorld.field = "Hello World";
             helloWorld.HelloWorld();
             Console.WriteLine(helloWorld.field);
