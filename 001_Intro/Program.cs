@@ -10,7 +10,7 @@ namespace _001_Intro
     {
         static void Main(string[] args)
         {
-            
+
         }
     }
 }
