@@ -62,7 +62,7 @@ namespace _013_Constructors
         }
 
         public Point (double z)
-            : this("Hello")
+            : this("Viktor")
         {
             this.z = z;
         }
@@ -83,7 +83,13 @@ namespace _013_Constructors
         {
             Point point = new Point(1,2,3);
             Console.WriteLine(new string('-', 50));
-            Console.WriteLine();
+            Console.WriteLine("x - {0}, y - {1}",point.X,point.Y);
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("name - {0}",point.Name);
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("z - {0}", point.Z);
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("a - {0}, b - {1}, c - {2}",point.A,point.B,point.C);
             Console.ReadKey();
         }
     }
