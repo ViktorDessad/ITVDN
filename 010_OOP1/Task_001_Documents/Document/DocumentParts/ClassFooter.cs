@@ -12,7 +12,7 @@ namespace Documents
 
         public string Footer
         {
-            get 
+            private get 
             {
                 if (footerName !=null)
                 {

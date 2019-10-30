@@ -12,7 +12,7 @@ namespace Documents
 
         public string Title
         {
-            get 
+           private get 
             {
                 if (titleName !=null)
                 {

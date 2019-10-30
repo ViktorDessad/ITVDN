@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Document\ClassDocument.cs" />
+    <Compile Include="Document\Document.cs" />
     <Compile Include="Document\DocumentParts\ClassBody.cs" />
     <Compile Include="Document\DocumentParts\ClassFooter.cs" />
     <Compile Include="Document\DocumentParts\ClassTitle.cs" />
