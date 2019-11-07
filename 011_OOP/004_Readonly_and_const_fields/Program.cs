@@ -4,11 +4,10 @@ namespace _004_Readonly_and_const_fields
 {
     class MyClass
     {
-        public readonly int field_1 = 10;
-        public const int field_2 = 100;
+        private const int field_2 = 100;
 
         public int Field_2 { get { return field_2; } }
-        public int Field_1 { get { return field_1; } }
+        public int Field_1 { get; } = 10;
 
         public MyClass()
         {
@@ -16,7 +15,7 @@ namespace _004_Readonly_and_const_fields
 
         public MyClass(int x)
         {
-            field_1 = x;
+            Field_1 = x;
         }  
     }
 
@@ -26,9 +25,10 @@ namespace _004_Readonly_and_const_fields
         {
             MyClass my = new MyClass(99);
             MyClass my1 = new MyClass();
-            Console.WriteLine(my.field_1);
+            Console.WriteLine(my.Field_1);
             Console.WriteLine(my1.Field_2);
-            Console.WriteLine(my1.field_1);
+            Console.WriteLine(my1.Field_1);
+            Console.ReadKey();
         }
     }
 }
