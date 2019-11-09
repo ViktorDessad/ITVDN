@@ -8,12 +8,23 @@ namespace Task_006
 {
     class Invoice
     {
-        private readonly int account = 10;
+        private readonly int account = 1991;
         private readonly string customer = "Viktor";
         private readonly string provider = "Microsoft";
 
         private string article;
         private int quantity;
+
+        public Invoice()
+        {
+        }
+
+        public Invoice(int account, string customer, string provider)
+        {
+            this.account = account;
+            this.customer = customer;
+            this.provider = customer;
+        }
 
         public void Vat(string article, int quantity, double sPrice, double vat)
         {
